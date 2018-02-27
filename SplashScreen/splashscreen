@@ -1,0 +1,17 @@
+add an image to drawable folder >>> splash.png
+create an XML file named as splashscreen.xml to drawable folder 
+
+<?xml version="1.0" encoding="utf-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+  <item>
+    <shape android:shape="rectangle" >
+      <solid android:color="#FFFFFF" />
+    </shape>
+  </item>
+  <item>
+    <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+      android:src="@drawable/splash"
+      android:gravity="center"
+      android:layout_gravity="center"/>
+  </item>
+</layer-list>
