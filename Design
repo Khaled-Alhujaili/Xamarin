@@ -1,0 +1,96 @@
+اولا اضافة ConstraintLayout
+من Tools > NuGet Package Manager > Manage NuGet Packages for Solution
+***************************************************************************
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <ImageView
+        android:src="@drawable/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtuser"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:hint="user"
+        android:singleLine="true"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        android:textAlignment="center"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:inputType="numberPassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtpass"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:hint="pass"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtuser"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:text="دخول"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtpass"
+        android:layout_marginTop="10dp" />
+    <ImageButton
+        android:id="@+id/btnimg"
+        android:src="@drawable/info"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnimg2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:background="@android:color/transparent" />
+    <ImageButton
+        android:id="@+id/btnimg2"
+        android:src="@drawable/youtube"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnimg"
+        app:layout_constraintEnd_toStartOf="@+id/btnimg3"
+        android:background="@android:color/transparent" />
+    <ImageButton
+        android:id="@+id/btnimg3"
+        android:src="@drawable/link"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnimg2"
+        app:layout_constraintEnd_toStartOf="@+id/btnimg4"
+        android:background="@android:color/transparent" />
+    <ImageButton
+        android:id="@+id/btnimg4"
+        android:src="@drawable/map"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnimg3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/transparent" />
+</android.support.constraint.ConstraintLayout>
