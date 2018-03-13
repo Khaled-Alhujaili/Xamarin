@@ -1,4 +1,5 @@
-  [Activity(Label = "تدريب", MainLauncher = true, Theme = "@style/Theme.About")]
+ *********************************Activity***********************************************
+ [Activity(Label = "تدريب", MainLauncher = true, Theme = "@style/Theme.About")]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -8,7 +9,7 @@
             SetContentView(Resource.Layout.About);
         }
     }
-    **************************
+    **************************Styles*************************************************
     <?xml version="1.0" encoding="utf-8" ?>
 <resources>
   <style name="Theme.About"
@@ -20,7 +21,7 @@
     <item name="android:backgroundDimEnabled">true</item>
   </style>
 </resources>
-********************************************
+***********************************Layout*************************************
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
