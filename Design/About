@@ -1,0 +1,31 @@
+  [Activity(Label = "تدريب", MainLauncher = true, Theme = "@style/Theme.About")]
+    public class MainActivity : Activity
+    {
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+
+            SetContentView(Resource.Layout.About);
+        }
+    }
+    **************************
+    <?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="Theme.About"
+     parent="android:Theme">
+    <item name="android:windowBackground">@drawable/bg</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsTranslucent">false</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+</resources>
+********************************************
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/kh" />
+    **********************************
